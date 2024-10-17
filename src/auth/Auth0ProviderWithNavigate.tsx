@@ -17,6 +17,7 @@ const Auth0ProviderWithNavigate = ({ children }: Props) => {
     }
 
     const onRedirectCallback = () => {
+        console.log(redirectUri)
         navigate("/auth-callback")
     }
 
